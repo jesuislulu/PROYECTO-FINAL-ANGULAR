@@ -1,0 +1,101 @@
+{
+  "usuarios": [
+    {
+      "id": 1,
+      "firstName": "Lucia",
+      "lastName": "Rocha",
+      "email": "Lucia@mail.com",
+      "password": "lulu00",
+      "token": "hjsdfJHFDSAFMsaDsan12sdanjjadashj3FDBEWH",
+      "rol": "admin"
+    },
+    {
+      "firstName": "Juan",
+      "lastName": "Pérez",
+      "email": "Juan@mail.com",
+      "password": "123456",
+      "token": "NYi0LH5IPwv76XTw7OhVG7HmJUgYRmbNUalNaAtf",
+      "rol": "user",
+      "id": 2
+    }
+  ],
+  "alumnos": [
+    {
+      "id": 1,
+      "firstName": "Roma",
+      "lastName": "Martinelli",
+      "age": 22,
+      "grade": 9
+    },
+    {
+      "id": 2,
+      "firstName": "Sandro",
+      "lastName": "Boticelli",
+      "age": 14,
+      "grade": 10
+    },
+    {
+      "id": 3,
+      "firstName": "Carlo",
+      "lastName": "Quinto",
+      "age": 15,
+      "grade": 10
+    },
+    {
+      "id": 4,
+      "firstName": "Vicente",
+      "lastName": "Cortazar",
+      "age": 15,
+      "grade": 8
+    },
+    {
+      "id": 5,
+      "firstName": "Miguel",
+      "lastName": "Angelo",
+      "age": 16,
+      "grade": 7
+    }
+  ],
+  "cursos": [
+    {
+      "id": 1,
+      "name": "Angular",
+      "description": "Curso de Angular",
+      "startDate": "03/02/2023",
+      "endDate": "06/30/2023"
+    },
+    {
+      "id": 2,
+      "name": "Photoshop",
+      "description": "Curso de Photoshop",
+      "startDate": "03/03/2023",
+      "endDate": "10/31/2023"
+    },
+    {
+      "id": 3,
+      "name": "Inglés",
+      "description": "Curso de Inglés Pre-Intermediate",
+      "startDate": "03/22/2023",
+      "endDate": "12/20/2023"
+    },
+    {
+      "id": 4,
+      "name": "Historia del Arte Renacentista",
+      "description": "Curso de Historia del Arte Renacentista",
+      "startDate": "08/03/2023",
+      "endDate": "12/18/2023"
+    }
+  ],
+  "inscripciones": [
+    {
+      "id": 1,
+      "idAlumno": 1,
+      "idCurso": 1
+    },
+    {
+      "id": 2,
+      "idAlumno": 2,
+      "idCurso": 1
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+<div class="container">
+    <h2 class="title">CREAR PERFIL</h2>
+    <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+      <div class="input-group">
+        <label class="input-label">Nombre</label>
+        <input [formControl]="firstNameControl" type="text" matInput class="custom-input" />
+      </div>
+      <div class="input-group">
+        <label class="input-label">Apellido</label>
+        <input [formControl]="lastNameControl" type="text" matInput class="custom-input" />
+      </div>
+      <div class="input-group">
+        <label class="input-label">Email</label>
+        <input [formControl]="emailControl" type="text" matInput class="custom-input" />
+      </div>
+      <div class="input-group">
+        <label class="input-label">Contraseña</label>
+        <input [formControl]="passwordControl" type="password" matInput class="custom-input" />
+      </div>
+      <div class="buttons">
+        <button type="submit" class="custom-btn custom-btn-primary">Registrarse</button>
+        <button type="submit" class="custom-btn custom-btn-secondary" routerLink="/auth/login">Login</button>
+      </div>
+    </form>
+  </div>
+  

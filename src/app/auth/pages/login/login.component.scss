@@ -1,0 +1,70 @@
+.container {
+    background-color: #f1f0ef;
+    padding: 80px;
+    max-width: 600px;
+    border: none;
+    background-color: #f1f0ef;
+    padding: 0;
+  }
+  
+  .title {
+    text-align: center;
+    margin-bottom: 80px;
+    color: #5f62d1;
+    font-size: 34px;
+    font-weight: 300;
+  }
+  
+  .input-group {
+    margin-bottom: 20px;
+  }
+  
+  .input-label {
+    color: #5f62d1;
+    font-size: 16px;
+    font-weight: 300;
+  }
+  
+  .custom-input {
+    background-color: transparent;
+    border: 1px solid #5f62d1;
+    border-radius: 0;
+    padding: 10px;
+    color: #5f62d1;
+    font-size: 16px;
+    font-weight: 300;
+    outline: none;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .buttons {
+    margin-top: 50px;
+    text-align: center;
+  }
+  
+  .custom-btn {
+    padding: 10px 20px;
+    border: none;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 5px;
+    border-radius: 0;
+    background-color: #5fecc8;
+    color: #5f62d1;
+  }
+  
+  .custom-btn-primary {
+    background-color: #5fecc8;
+    color: #5f62d1;
+  }
+  
+  .custom-btn-secondary {
+    background-color: #5fecc8;
+    color: #5f62d1;
+  }
+  
+  .custom-btn-secondary:focus {
+    outline: none;
+  }
+  

@@ -1,0 +1,53 @@
+<mat-drawer-container class="example-container">
+  <mat-drawer #drawer class="example-sidenav" mode="side">
+    <div class="example-sidenav">
+      <img class="profile-image" src="./assets/P_20190104_122111.jpg" alt="Profile Image">
+    </div>
+    
+      <div class="d-flex flex-column flex-shrink-0 p-3">
+      <mat-nav-list class="navItems">
+        <a mat-list-item [routerLink]="link.path" *ngFor="let link of routerLinks">
+          <mat-icon>{{ link.icon }}</mat-icon>
+          <span>{{ link.title }}</span>
+        </a>         
+      </mat-nav-list>          
+      <mat-nav-list class="logout">
+        <a (click)="logout()" mat-list-item>
+          <mat-icon>logout</mat-icon>
+          <span>Cerrar sesión</span>
+        </a>         
+      </mat-nav-list>           
+    </div>
+    <div class="nameFoot">      
+      <div class="text-center">  
+        <p class="user-name">Lucía Rocha</p>
+      </div>
+    </div>  
+  </mat-drawer>
+
+  <div class="example-sidenav-content">
+    <mat-toolbar class="toolbar">
+      <div>
+        <button (click)="drawer.toggle()" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+          <mat-icon class="menu-icon">menu</mat-icon>
+        </button>          
+      </div>      
+      <div class="container">
+        <div class="row">
+          <div class="col snTitle">
+            <span>PROYECTO FINAL</span>
+          </div>
+          <div class="col componentName">
+            <span>{{ componentName | uppercase }}</span>
+          </div>
+          <div class="col userName">
+            <span>¡Hola {{ (authUser$ | async)?.firstName }} {{ (authUser$ | async)?.lastName }}!</span>
+          </div>
+        </div>  
+      </div>                                             
+    </mat-toolbar>  
+    <main>
+      <router-outlet></router-outlet>
+    </main> 
+  </div>
+</mat-drawer-container>
