@@ -1,20 +1,90 @@
-.mat-elevation-z8{
-    th{
-        text-align: center;
-    }
-    td{
-        text-align: center;
-    }
-}
-
-h3{
+.container-md {
+    padding: 1rem;
+  }
+  
+  .title {
     font-weight: bold;
+    font-size: 2rem;
     text-align: center;
     margin-bottom: 2rem;
-    color: #2A2A2D;
-}
-
-.viewButton{
-    background-color: #38AB3D !important;
-    color: white !important;
-}
+    color: #5fecc8;
+  }
+  
+  .custom-table {
+    background-color: #f1f0ef;
+    box-shadow: none;
+    td,
+    th {
+      border: 1px solid #5f62d1;
+      color: #5f62d1;
+    }
+    .mat-icon {
+      color: #5f62d1;
+    }
+  }
+  
+  .custom-view-button {
+    background-color: #5fecc8;
+    color: #5f62d1 !important;
+    box-shadow: none !important;
+    border-radius: 50% !important;
+    padding: 0 !important;
+    mat-icon {
+      color: #5f62d1;
+    }
+  }
+  
+  .custom-column {
+    font-size: 1.2rem;
+    font-weight: normal;
+    color: #5f62d1;
+  }
+  
+  .custom-button {
+    background-color: #5fecc8;
+    color: #5f62d1;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  
+  .custom-button-icon {
+    color: #5f62d1;
+  }
+  
+  .custom-delete-button {
+    background-color: #5fecc8;
+    box-shadow: none !important;
+    border-radius: 50% !important;
+    color: #5f62d1 !important;
+    mat-icon {
+      color: #5f62d1 !important;
+    }
+  }
+  
+  .custom-new-button {
+    background-color: #5fecc8 !important;
+    border-radius: 0 !important;
+    color: #5f62d1 !important;
+  }
+  
+  .mat-icon[svgIcon='delete'] {
+    color: #5fecc8 !important;
+  }
+  
+  .addButton {
+    background-color: #5fecc8 !important;
+    color: #5f62d1 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+  }
+  
+  .custom-edit-button {
+    background-color: #5fecc8;
+    box-shadow: none !important;
+    border-radius: 50% !important;
+    color: #5f62d1 !important;
+    mat-icon {
+      color: #5f62d1 !important;
+    }
+  }
+  

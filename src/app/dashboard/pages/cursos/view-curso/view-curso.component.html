@@ -1,6 +1,6 @@
 <div class="container-md">
     <div>
-        <h3>Detalles del Curso</h3>
+        <h3 class="title">Detalles del Curso</h3>
     </div>
     <div class="container-md">       
         <div class="row">
@@ -30,7 +30,7 @@
                         </div>
                         <div class="row">
                             <div class="col">
-                                <p class="lblTitle">Fecha Inicio:</p>
+                                <p class="lblTitle">Inicio:</p>
                             </div>    
                             <div class="col">
                                 <p>{{ curso?.startDate | date: 'MM/dd/yyyy' }}</p>
@@ -38,7 +38,7 @@
                         </div>
                         <div class="row">
                             <div class="col">
-                                <p class="lblTitle">Fecha Fin:</p>
+                                <p class="lblTitle">Finalización:</p>
                             </div>    
                             <div class="col">
                                 <p>{{ curso?.endDate | date: 'MM/dd/yyyy' }}</p>
@@ -51,7 +51,7 @@
                 <div class="card">
                     <div class="card-body">
                         <div>
-                            <p class="titleCard">Alumnos inscritos</p>
+                            <p class="titleCard">Alumnos inscriptos</p>
                         </div>
                         <hr>
                         <div *ngIf="haveAlumnos; else elseBlock">
@@ -62,14 +62,14 @@
                                             <p>{{ ins.alumno }}</p>
                                         </div>
                                         <div class="col">
-                                            <button (click)="deleteIns(ins.id)" mat-flat-button color="primary">Desinscribir</button>
+                                        <button (click)="deleteIns(ins.id)" mat-flat-button class="custom-button">Desinscribir</button>
                                         </div>
                                     </div>
                                 </li>
                             </ul>                            
                         </div>
                         <ng-template #elseBlock>
-                            <p>Actualmente no hay alumnos inscritos.</p>
+                            <p>Actualmente no hay alumnos inscriptos.</p>
                         </ng-template>
                     </div>
                 </div>

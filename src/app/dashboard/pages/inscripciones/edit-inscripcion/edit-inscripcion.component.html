@@ -1,8 +1,6 @@
-<div class="container-md">
-    <div>
-        <p class="title">Editar Alumno</p>
-    </div>
-    <div mat-dialog-content>
+<div class="container">
+    <h2 class="title">EDITAR ALUMNO</h2>
+        <div mat-dialog-content>
         <form [formGroup]="registerForm">
             <div class="col-md-6">
                 <mat-form-field>
@@ -28,8 +26,8 @@
             </div>                    
         </form>
     </div>
-</div>
-<div mat-dialog-actions class="buttons">
-    <button mat-dialog-close mat-flat-button color="primary">Cancelar</button>
-    <button (click)="save()" mat-flat-button color="warn">Guardar</button>
+    <div mat-dialog-actions class="buttons" style="text-align: center;">
+        <button mat-dialog-close mat-flat-button [style.backgroundColor]="'#5fecc8'" [style.color]="'#5f62d1'">Cancelar</button>
+        <button (click)="save()" mat-flat-button [style.backgroundColor]="'#5fecc8'" [style.color]="'#5f62d1'">Guardar</button>
+    </div>    
 </div>

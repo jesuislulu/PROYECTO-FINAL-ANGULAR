@@ -4,11 +4,11 @@
       "id": 1,
       "firstName": "Lucia",
       "lastName": "Rocha",
-      "email": "Lucia@mail.com",
+      "email": "lucia@mail.com",
       "password": "lulu00",
       "token": "hjsdfJHFDSAFMsaDsan12sdanjjadashj3FDBEWH",
       "rol": "admin"
-    },
+    },    
     {
       "firstName": "Juan",
       "lastName": "Pérez",
