@@ -33,8 +33,8 @@
         </form>
     </div>
 
-<div mat-dialog-actions class="buttons">
-    <button mat-dialog-close mat-flat-button color="primary">Cancelar</button>
-    <button (click)="save()" mat-flat-button color="warn">Guardar</button>
-</div>
+    <div mat-dialog-actions class="buttons" style="text-align: center;">
+        <button mat-dialog-close mat-flat-button [style.backgroundColor]="'#5fecc8'" [style.color]="'#5f62d1'">Cancelar</button>
+        <button (click)="save()" mat-flat-button [style.backgroundColor]="'#5fecc8'" [style.color]="'#5f62d1'">Guardar</button>
+    </div>    
 </div>

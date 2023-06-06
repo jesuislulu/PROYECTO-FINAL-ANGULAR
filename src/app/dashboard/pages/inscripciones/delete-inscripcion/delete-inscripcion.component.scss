@@ -3,6 +3,7 @@
     padding: 80px;
     max-width: 600px;
     border: none;
+    box-shadow: none !important;
 }
 
 .title {
@@ -30,11 +31,6 @@
 }
 
 .buttons button.mat-flat-button {
-    background-color: #5fecc8 !important;
-    color: #5f62d1 !important;
-}
-
-.buttons button[color="warn"] {
     background-color: #5fecc8 !important;
     color: #5f62d1 !important;
 }
