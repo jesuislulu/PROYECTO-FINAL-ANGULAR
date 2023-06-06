@@ -1,16 +1,16 @@
 <div class="container-md">
-    <div>
-      <h3>Lista de Alumnos</h3>
-    </div>
+  <div>
+      <h3 class="title">ALUMNOS</h3>
+  </div>
     <div *ngIf="isAdmin">
-      <button (click)="createAlumno()" mat-flat-button color="primary">
+      <button (click)="createAlumno()" mat-flat-button color="none" class="custom-new-button">
         <mat-icon>add</mat-icon>
-        Agregar alumno
+        AGREGAR ALUMNO
       </button>
     </div>
     <br />
     <div>
-      <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+      <table mat-table [dataSource]="dataSource" class="custom-table">
         <!-- Id Column -->
         <ng-container matColumnDef="id">
           <th appTitles mat-header-cell *matHeaderCellDef>Id.</th>
@@ -31,7 +31,7 @@
   
         <!-- Grade Column -->
         <ng-container matColumnDef="grade">
-          <th appTitles mat-header-cell *matHeaderCellDef>Calificación</th>
+          <th appTitles mat-header-cell *matHeaderCellDef>Nota</th>
           <td mat-cell *matCellDef="let alumno">{{ alumno.grade }}</td>
         </ng-container>
 
@@ -39,7 +39,7 @@
         <ng-container matColumnDef="view">
           <th mat-header-cell *matHeaderCellDef></th>
           <td mat-cell *matCellDef="let alumno">
-            <button (click)="view(alumno.id)" mat-mini-fab class="viewButton">
+            <button (click)="view(alumno.id)" mat-mini-fab class="custom-view-button">
               <mat-icon>visibility</mat-icon>
             </button>
           </td>
@@ -49,7 +49,7 @@
         <ng-container matColumnDef="edit">
           <th mat-header-cell *matHeaderCellDef></th>
           <td mat-cell *matCellDef="let alumno">
-            <button (click)="edit(alumno)" mat-mini-fab color="primary"  *ngIf="isAdmin">
+            <button (click)="edit(alumno)" mat-mini-fab class="custom-edit-button" *ngIf="isAdmin">
               <mat-icon>edit</mat-icon>
             </button>
           </td>
@@ -59,7 +59,7 @@
         <ng-container matColumnDef="delete">
           <th mat-header-cell *matHeaderCellDef></th>
           <td mat-cell *matCellDef="let alumno">
-            <button (click)="delete(alumno.id)" mat-mini-fab color="warn" *ngIf="isAdmin">
+            <button (click)="delete(alumno.id)" mat-mini-fab class="custom-delete-button" *ngIf="isAdmin">
               <mat-icon>delete</mat-icon>
             </button>
           </td>

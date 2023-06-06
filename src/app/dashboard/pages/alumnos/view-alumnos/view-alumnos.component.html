@@ -1,8 +1,8 @@
 <div class="container-md">
     <div>
-        <h3>Detalles del Alumno</h3>
-    </div>
-    <div class="container-md">       
+        <h3 class="title">Detalles del Alumno</h3>
+    </div>    
+    <div class="container-md"> 
         <div class="row">
             <div class="col-2"></div>
             <div class="col-4">
@@ -38,7 +38,7 @@
                         </div>
                         <div class="row">
                             <div class="col">
-                                <p class="lblTitle">Calificación:</p>
+                                <p class="lblTitle">Nota:</p>
                             </div>    
                             <div class="col">
                                 <p>{{ alumno?.grade }}</p>
@@ -51,7 +51,7 @@
                 <div class="card">
                     <div class="card-body">
                         <div>
-                            <p class="titleCard">Cursos que toma</p>
+                            <p class="titleCard">Cursos que asiste</p>
                         </div>
                         <hr>
                         <div *ngIf="haveCursos; else elseBlock">
@@ -62,14 +62,14 @@
                                             <p>{{ ins.curso }}</p>
                                         </div>
                                         <div class="col">
-                                            <button (click)="deleteIns(ins.id)" mat-flat-button color="primary">Desinscribir</button>
+                                            <button (click)="deleteIns(ins.id)" mat-flat-button class="custom-button">Desinscribir</button>
                                         </div>
                                     </div>
                                 </li>
                             </ul>                            
                         </div>
                         <ng-template #elseBlock>
-                            <p>Actualmente no está inscrito en ningún curso.</p>
+                            <p>Actualmente no está inscripto en ningún curso.</p>
                         </ng-template>
                     </div>
                 </div>
